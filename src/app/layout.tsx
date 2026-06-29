@@ -1,26 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Sans, IBM_Plex_Mono, Newsreader } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const ibmPlexSans = IBM_Plex_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-sans",
   display: "swap",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
+const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "600"],
   variable: "--font-mono",
-  display: "swap",
-});
-
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  style: ["italic", "normal"],
-  variable: "--font-heading",
   display: "swap",
 });
 
@@ -28,7 +20,16 @@ export const metadata: Metadata = {
   title: "SMIIT CyberAI — AI Governance & Infrastructure Consultancy",
   description:
     "SMIIT CyberAI is a London-based specialist consulting firm for AI Governance & Infrastructure in regulated industries. EU AI Act compliance, cloud architecture, and forward-deployed engineers.",
-  keywords: ["AI Governance", "EU AI Act", "NIST AI RMF", "ISO 42001", "Cloud Infrastructure", "AI Agents", "Cybersecurity", "London"],
+  keywords: [
+    "AI Governance",
+    "EU AI Act",
+    "NIST AI RMF",
+    "ISO 42001",
+    "Cloud Infrastructure",
+    "AI Agents",
+    "Cybersecurity",
+    "London",
+  ],
   authors: [{ name: "SMIIT CyberAI" }],
   openGraph: {
     title: "SMIIT CyberAI — AI Governance & Infrastructure",
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#2440E0",
+  themeColor: "#06070c",
 };
 
 export default function RootLayout({
@@ -62,10 +63,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} ${newsreader.variable}`}
+      className={`${inter.variable} ${jetBrainsMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="antialiased font-sans selection:bg-[rgba(36,64,224,0.16)] selection:text-[var(--ink)]">
+      <body className="antialiased font-sans selection:bg-[rgba(59,110,255,0.2)] selection:text-[var(--foreground)]">
         {children}
       </body>
     </html>
