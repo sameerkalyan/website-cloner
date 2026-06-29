@@ -24,7 +24,7 @@ useEffect(() => {
 return (
   <header
     className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? "glass border-b border-[var(--line)]" : "bg-transparent"
+      scrolled ? "glass border-b border-[var(--line)]" : "bg-[var(--pa)]"
     }`}
   >
   <nav className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between lg:px-8">
