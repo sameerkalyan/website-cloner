@@ -14,6 +14,8 @@ export interface BlogArticle {
   id: number;
   title: string;
   date: string;
+  author: string;
+  role: string;
   category: string;
   excerpt: string;
   readTime: string;

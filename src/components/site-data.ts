@@ -87,6 +87,8 @@ export const BLOG_ARTICLES = [
     id: 1,
     title: "Connecting Enterprise Systems to AI via MCP: An Architecture Guide",
     date: "May 2026",
+    author: "Priya Nair",
+    role: "Infrastructure Lead",
     category: "AI Infrastructure",
     excerpt:
       "How Model Context Protocol bridges your existing enterprise data and AI systems—architecture patterns for regulated organisations.",
@@ -96,6 +98,8 @@ export const BLOG_ARTICLES = [
     id: 2,
     title: "EU AI Act Enforcement: What Regulated Organisations Must Do Now",
     date: "April 2026",
+    author: "James Aldridge",
+    role: "Head of Governance",
     category: "AI Governance",
     excerpt:
       "EU AI Act enforcement has begun. Here is the compliance roadmap for financial services, healthcare, and critical infrastructure.",
@@ -105,6 +109,8 @@ export const BLOG_ARTICLES = [
     id: 3,
     title: "Cloud Architecture for AI Workloads in Regulated Industries",
     date: "March 2026",
+    author: "Sarah Okonkwo",
+    role: "Cloud Architect",
     category: "Infrastructure",
     excerpt:
       "Designing cloud infrastructure that meets both AI performance demands and regulatory requirements—landing zones, networking, and identity.",
@@ -114,6 +120,8 @@ export const BLOG_ARTICLES = [
     id: 4,
     title: "The Real Cost of AI Governance Debt",
     date: "March 2026",
+    author: "James Aldridge",
+    role: "Head of Governance",
     category: "AI Governance",
     excerpt:
       "Governance debt is real. It compounds silently and becomes catastrophically expensive to address. Here is how to measure and reduce it.",
@@ -123,6 +131,8 @@ export const BLOG_ARTICLES = [
     id: 5,
     title: "Governing Autonomous AI Systems: Accountability, Audit & Control",
     date: "February 2026",
+    author: "Dr. Amira Hassan",
+    role: "AI Risk Specialist",
     category: "AI Governance",
     excerpt:
       "Autonomous AI systems challenge traditional governance models. A practical framework for accountability and audit in agent-based systems.",
@@ -132,6 +142,8 @@ export const BLOG_ARTICLES = [
     id: 6,
     title: "Why AI Transformation Programmes Stall After the Pilot",
     date: "January 2026",
+    author: "Marcus Wei",
+    role: "Transformation Director",
     category: "Transformation",
     excerpt:
       "Most AI transformation stalls after the successful pilot. Why—and how to build governance infrastructure that scales.",

@@ -71,6 +71,11 @@ export function InsightsSection() {
                     {article.readTime}
                   </span>
                 </div>
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xs font-medium text-[var(--ink)]">{article.author}</span>
+                  <span className="text-xs text-[var(--ink3)]">·</span>
+                  <span className="text-xs text-[var(--ink3)]">{article.role}</span>
+                </div>
                 <h3 className="text-lg font-semibold leading-snug text-[var(--ink)] mb-3 group-hover:text-[var(--accent)] transition-colors">
                   {article.title}
                 </h3>
