@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Icon } from "@/components/icons";
+import { STAT_73PCT_NOTE, PROOF_ITEMS } from "@/components/site-data";
 
 export function TheClaimStats() {
   return (
@@ -16,6 +17,9 @@ export function TheClaimStats() {
             <h2 className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)] mt-6 leading-snug">
               of organisations have deployed AI without a governance framework.
             </h2>
+            <p className="text-[11px] text-[var(--ink3)] mt-3 leading-relaxed">
+              {STAT_73PCT_NOTE}
+            </p>
           </div>
           <div className="pt-4 md:pt-8">
             <p className="text-base text-[var(--ink2)] leading-relaxed mb-8">
@@ -23,13 +27,23 @@ export function TheClaimStats() {
               financial services, healthcare, and critical infrastructure — where
               the consequences of ungoverned AI compound over time.
             </p>
-            <blockquote className="border-l-2 border-[var(--accent)] pl-6 py-1">
-              <p className="text-lg font-display italic text-[var(--ink2)] leading-relaxed">
-                The organisations that govern AI well will not just avoid
-                regulatory risk — they will move faster, with greater confidence,
-                than those who do not.
+            <div className="border-t border-[var(--line)] pt-6 mb-8">
+              <p className="text-[10px] font-mono text-[var(--ink3)] uppercase tracking-widest mb-4">
+                Selected outcomes
               </p>
-            </blockquote>
+              <div className="space-y-4">
+                {PROOF_ITEMS.map((item) => (
+                  <div key={item.metric} className="flex items-start gap-3">
+                    <span className="text-sm font-mono font-bold text-[var(--accent)] mt-0.5">
+                      {item.metric}
+                    </span>
+                    <span className="text-sm text-[var(--ink2)] leading-relaxed">
+                      {item.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
             <div className="mt-8">
               <Link
                 href="#services"

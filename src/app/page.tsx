@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { AnnouncementBanner } from "@/components/announcement-banner";
 import { HeroSection } from "@/components/hero-section";
+import { ProofBlock } from "@/components/proof-block";
 import { TheClaimStats } from "@/components/the-claim-stats";
 import { TwoPillarDisciplines } from "@/components/two-pillar-disciplines";
 import { ServicesTabs } from "@/components/services-tabs";
@@ -19,6 +20,7 @@ export default function Home() {
       <AnnouncementBanner />
       <main>
         <HeroSection />
+        <ProofBlock />
         <TheClaimStats />
         <TwoPillarDisciplines />
         <ServicesTabs />

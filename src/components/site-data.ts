@@ -80,141 +80,6 @@ export const SERVICES = [
     sideItems: ["Infrastructure", "Cloud", "Platform"],
     frameworks: ["AWS", "Azure", "GCP", "Terraform"],
   },
-  {
-    id: 3,
-    tag: "AI Agents & MCP",
-    title: "AI Agents & MCP",
-    description:
-      "Agent architecture design, MCP server implementation, and audit trails—building trustworthy autonomous AI.",
-    bullets: [
-      "Multi-agent system architecture",
-      "MCP server design and configuration",
-      "Claude enterprise integration",
-      "Agent audit trail and observability",
-      "Human-in-the-loop orchestration",
-      "Agent governance and accountability",
-    ],
-    sideItems: ["Security", "Framework"],
-    frameworks: ["Claude", "MCP", "OpenAI", "LangChain"],
-  },
-  {
-    id: 4,
-    tag: "DevOps & Platform Engineering",
-    title: "DevOps & Platform Engineering",
-    description:
-      "Forward-deployed engineers who embed with your teams, build internal developer platforms, and streamline CI/CD for AI workloads.",
-    bullets: [
-      "Internal Developer Platform (IDP) design",
-      "CI/CD pipeline modernisation",
-      "GitOps and infrastructure automation",
-      "Developer AI toolchain integration",
-      "Observability and SRE practices",
-      "Platform team structure and mentoring",
-    ],
-    sideItems: ["Infrastructure", "Cloud"],
-    frameworks: ["GitHub Actions", "ArgoCD", "Kubernetes", "Pulumi"],
-  },
-  {
-    id: 5,
-    tag: "Cloud & Migration",
-    title: "Cloud & Migration",
-    description:
-      "Landing zone design, migration strategy, and cloud security posture for organisations moving to regulated public cloud.",
-    bullets: [
-      "Cloud landing zone architecture",
-      "Phased migration strategy and planning",
-      "AWS / Azure / GCP security baselines",
-      "Identity and access governance",
-      "Cost governance and FinOps",
-      "Multi-cloud networking and connectivity",
-    ],
-    sideItems: ["Cloud", "Security"],
-    frameworks: ["AWS", "Azure", "GCP", "Terraform"],
-  },
-  {
-    id: 6,
-    tag: "Digital Transformation",
-    title: "Digital Transformation",
-    description:
-      "Strategy and programme governance for organisations adopting AI at scale. Build-vs-buy decisions with governed implementation.",
-    bullets: [
-      "AI adoption readiness assessment",
-      "Transformation strategy development",
-      "Programme governance and delivery",
-      "Build-vs-buy decision frameworks",
-      "Stakeholder alignment and communication",
-      "Change management for AI initiatives",
-    ],
-    sideItems: ["Strategy"],
-    frameworks: ["PMI", "SAFe", "Prosci"],
-  },
-  {
-    id: 7,
-    tag: "Cybersecurity & Red Teaming",
-    title: "Cybersecurity & Red Teaming",
-    description: "AI-specific adversarial testing, red teaming, and penetration testing mapped to MITRE ATLAS and OWASP AI Top 10.",
-    bullets: [
-      "AI red teaming and adversarial ML",
-      "Prompt injection and jailbreak testing",
-      "MITRE ATLAS-mapped assessments",
-      "OWASP AI Top 10 risk validation",
-      "Traditional penetration testing",
-      "Continuous security validation",
-    ],
-    sideItems: ["Security"],
-    frameworks: ["MITRE ATLAS", "OWASP AI Top 10", "PTES"],
-  },
-  {
-    id: 8,
-    tag: "Cloud-Native Security & Zero Trust",
-    title: "Cloud-Native Security & Zero Trust",
-    description:
-      "End-to-end cloud-native security: CNAPP, runtime protection, secrets management, and Zero Trust architecture.",
-    bullets: [
-      "CNAPP platform design and deployment",
-      "Container and runtime security",
-      "Zero Trust architecture implementation",
-      "Secrets management and rotation",
-      "SOC 2 / ISO 27001 / PCI / HIPAA baselines",
-      "Threat detection and incident response",
-    ],
-    sideItems: ["Security", "Framework"],
-    frameworks: ["SOC 2", "ISO 27001", "PCI DSS", "HIPAA"],
-  },
-  {
-    id: 9,
-    tag: "UI/UX & Design for Trust",
-    title: "UI/UX & Design for Trust",
-    description:
-      "Governance dashboards, human-in-the-loop consoles, and audit UX that make complex AI systems comprehensible and accountable.",
-    bullets: [
-      "Governance dashboard UX",
-      "Human-in-the-loop console design",
-      "Audit trail visualisation",
-      "Transparency and explainability patterns",
-      "Internal design system governance",
-      "Usability testing for compliance tools",
-    ],
-    sideItems: ["Design"],
-    frameworks: ["WCAG 2.2", "Figma", "Storybook", "Design Tokens"],
-  },
-  {
-    id: 10,
-    tag: "M&A & Data Transformation",
-    title: "M&A & Data Transformation",
-    description:
-      "Technology and data due diligence, post-merger integration, and carve-out execution for AI and data infrastructure.",
-    bullets: [
-      "Technical due diligence for AI assets",
-      "Data estate assessment and mapping",
-      "Post-merger integration planning",
-      "Carve-out execution support",
-      "AI platform rationalisation",
-      "Data migration and governance transfer",
-    ],
-    sideItems: ["M&A", "Data"],
-    frameworks: ["SOX", "IFRS", "PwC DD Framework"],
-  },
 ];
 
 export const BLOG_ARTICLES = [
@@ -373,6 +238,23 @@ export const LEAD_MAGNETS = [
   },
 ];
 
+export const PROOF_ITEMS = [
+  {
+    metric: "40+",
+    label: "Engagements delivered across financial services, healthcare, and critical infrastructure",
+  },
+  {
+    metric: "6",
+    label: "Governance dimensions assessed per client engagement",
+  },
+  {
+    metric: "72hr",
+    label: "Average gap-report turnaround after readiness assessment",
+  },
+] as const;
+
+export const STAT_73PCT_NOTE = "OECD.AI (2024). Based on a survey of 4,500 organisations across 20 countries.";
+
 export const READINESS_DATA = [
   { label: "Policy & Framework", pct: 72 },
   { label: "AI Risk Management", pct: 58 },
@@ -386,12 +268,7 @@ export const FOOTER_LINKS = {
   services: [
     { label: "AI Governance", href: "#services" },
     { label: "AI Infrastructure", href: "#services" },
-    { label: "AI Agents & MCP", href: "#services" },
-    { label: "DevOps & Platform Engineering", href: "#services" },
-    { label: "Cloud & Migration", href: "#services" },
-    { label: "Digital Transformation", href: "#services" },
-    { label: "Cybersecurity & Red Teaming", href: "#services" },
-    { label: "Zero Trust", href: "#services" },
+    { label: "Extended capabilities", href: "#services", note: "via partner network" },
   ],
   intelligence: [
     { label: "All articles", href: "#insights" },

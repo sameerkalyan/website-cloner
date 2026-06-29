@@ -13,10 +13,10 @@ export function ServicesTabs() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <header className="max-w-2xl mb-12">
           <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
-            Full service detail
+            Our practice
           </p>
           <p className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)]">
-            Everything we do, in depth.
+            Two pillars. One practice. Zero compromise.
           </p>
         </header>
 
@@ -35,6 +35,9 @@ export function ServicesTabs() {
                 {s.title}
               </button>
             ))}
+            <p className="text-xs text-[var(--ink3)] pt-2 leading-relaxed">
+              Extended capabilities available via partner network.
+            </p>
           </div>
 
           <div className="flex-1 border border-[var(--line)] rounded-xl p-8 md:p-10 bg-[var(--card)]">
@@ -64,42 +67,44 @@ export function ServicesTabs() {
                   ))}
                 </ul>
               </div>
-              <aside className="xl:w-64 shrink-0 space-y-4 border-t xl:border-t-0 xl:border-l border-[var(--line)] pt-6 xl:pt-0 xl:pl-8">
-                <p className="text-xs font-mono text-[var(--ink3)] uppercase tracking-widest">
-                  Frameworks
-                </p>
-                <ul className="space-y-2">
-                  {active.frameworks?.map((f) => (
-                    <li
-                      key={f}
-                      className="flex items-center justify-between text-sm py-1.5 border-b border-[var(--line)]"
-                    >
-                      <span className="text-[var(--ink2)]">{f}</span>
-                      <span className="text-[10px] font-mono text-[var(--ink3)] uppercase tracking-wider px-2 py-0.5 bg-[var(--pa)] rounded-full">
-                        {active.sideItems[0]}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="pt-4 flex items-center justify-between">
-                  <span className="text-xs font-mono text-[var(--ink3)] uppercase tracking-widest">
-                    Stack coverage
-                  </span>
-                  <span className="text-xs font-mono text-[var(--accent)]">
-                    Covered
-                  </span>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {active.stackRows?.map((s, i) => (
-                    <span
-                      key={i}
-                      className="text-xs px-2 py-1 rounded bg-[var(--pa)] border border-[var(--line)] text-[var(--ink2)] font-mono"
-                    >
-                      {s}
+              {active.frameworks && (
+                <aside className="xl:w-64 shrink-0 space-y-4 border-t xl:border-t-0 xl:border-l border-[var(--line)] pt-6 xl:pt-0 xl:pl-8">
+                  <p className="text-xs font-mono text-[var(--ink3)] uppercase tracking-widest">
+                    Frameworks
+                  </p>
+                  <ul className="space-y-2">
+                    {active.frameworks.map((f) => (
+                      <li
+                        key={f}
+                        className="flex items-center justify-between text-sm py-1.5 border-b border-[var(--line)]"
+                      >
+                        <span className="text-[var(--ink2)]">{f}</span>
+                        <span className="text-[10px] font-mono text-[var(--ink3)] uppercase tracking-wider px-2 py-0.5 bg-[var(--pa)] rounded-full">
+                          {active.sideItems[0]}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="pt-4 flex items-center justify-between">
+                    <span className="text-xs font-mono text-[var(--ink3)] uppercase tracking-widest">
+                      Stack coverage
                     </span>
-                  ))}
-                </div>
-              </aside>
+                    <span className="text-xs font-mono text-[var(--accent)]">
+                      Covered
+                    </span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {active.stackRows?.map((s, i) => (
+                      <span
+                        key={i}
+                        className="text-xs px-2 py-1 rounded bg-[var(--pa)] border border-[var(--line)] text-[var(--ink2)] font-mono"
+                      >
+                        {s}
+                      </span>
+                    ))}
+                  </div>
+                </aside>
+              )}
             </div>
           </div>
         </div>
