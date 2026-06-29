@@ -7,7 +7,7 @@ export function TheClaimStats() {
   return (
     <section className="py-24 md:py-32 bg-[var(--card)] border-y border-[var(--line)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
           <div>
             <span className="text-8xl md:text-9xl font-display font-bold text-[var(--ink)] leading-none">
               73%

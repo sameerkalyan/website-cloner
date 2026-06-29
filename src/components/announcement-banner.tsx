@@ -3,7 +3,7 @@ import { Icon } from "@/components/icons";
 
 export function AnnouncementBanner() {
   return (
-    <aside className="relative z-20 bg-[var(--ink)] text-[var(--pa)]">
+    <aside className="relative z-30 bg-[var(--ink)] text-[var(--pa)] mt-16">
       <div className="mx-auto max-w-7xl px-6 py-3 flex items-center justify-between gap-4 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 min-w-0">
           <span className="inline-flex items-center gap-2 shrink-0">
