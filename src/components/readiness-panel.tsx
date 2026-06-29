@@ -1,26 +1,9 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import { READINESS_DATA } from "@/components/site-data";
 
 export function ReadinessPanel() {
-  const panelRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = panelRef.current;
-    if (!el) return;
-    const bars = el.querySelectorAll("[data-pct]");
-    bars.forEach((bar) => {
-      const pct = Number((bar as HTMLElement).dataset.pct || "0");
-      (bar as HTMLElement).style.width = `${pct}%`;
-    });
-  }, []);
-
   return (
-    <aside
-      ref={panelRef}
-      className="rounded-2xl border border-[var(--line)] bg-[var(--card)] p-8"
-    >
+    <aside className="rounded-2xl border border-[var(--line)] bg-[var(--card)] p-8">
+
       <p className="text-xs font-mono text-[var(--ink3)] uppercase tracking-widest mb-2">
         Governance Readiness Index
       </p>
@@ -38,9 +21,8 @@ export function ReadinessPanel() {
             </div>
             <div className="h-1.5 w-full rounded-full bg-[var(--pa2)]">
               <div
-                data-pct={item.pct}
                 className="h-full rounded-full bg-[var(--accent)] transition-all duration-700 ease-out"
-                style={{ width: "0%" }}
+                style={{ width: `${item.pct}%` }}
               />
             </div>
           </li>
