@@ -9,12 +9,12 @@ export function TheClaimStats() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
           <div>
-            <span className="text-8xl md:text-9xl font-heading font-semibold text-[var(--ink)] leading-none">
+            <span className="text-8xl md:text-9xl font-display font-bold text-[var(--ink)] leading-none">
               73%
             </span>
           </div>
           <div className="pt-2">
-            <h2 className="text-2xl md:text-3xl font-heading font-semibold leading-heading text-[var(--ink)] mb-6">
+            <h2 className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)] mb-6">
               of organisations have deployed AI without a governance framework.
             </h2>
             <p className="text-base text-[var(--ink2)] leading-relaxed mb-8">
@@ -23,7 +23,7 @@ export function TheClaimStats() {
               the consequences of ungoverned AI compound over time.
             </p>
             <blockquote className="border-l-2 border-[var(--accent)] pl-6 py-1">
-              <p className="text-lg font-heading italic text-[var(--ink2)] leading-relaxed">
+              <p className="text-lg font-display italic text-[var(--ink2)] leading-relaxed">
                 The organisations that govern AI well will not just avoid
                 regulatory risk — they will move faster, with greater confidence,
                 than those who do not.

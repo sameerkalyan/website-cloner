@@ -10,7 +10,7 @@ export function TwoPillarDisciplines() {
           <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
             § Two primary disciplines
           </p>
-          <p className="text-2xl md:text-3xl font-heading font-semibold leading-heading text-[var(--ink)]">
+          <p className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)]">
             Two pillars. One practice. Zero compromise.
           </p>
         </header>
@@ -24,7 +24,7 @@ export function TwoPillarDisciplines() {
                 Pillar {s.id <= 9 ? `0${s.id}` : s.id} —{" "}
                 {s.id === 1 ? "Primary" : "Secondary"} · {s.tag}
               </p>
-              <h3 className="text-xl md:text-2xl font-heading font-semibold leading-heading text-[var(--ink)] mb-4">
+              <h3 className="text-xl md:text-2xl font-display font-semibold text-[var(--ink)] mb-4">
                 {s.title}
               </h3>
               <p className="text-base text-[var(--ink2)] leading-relaxed mb-6">

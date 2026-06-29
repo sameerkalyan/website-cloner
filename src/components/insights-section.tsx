@@ -32,7 +32,7 @@ export function InsightsSection() {
             <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
               Intelligence Hub
             </p>
-            <h2 className="text-3xl md:text-4xl font-heading font-semibold leading-heading text-[var(--ink)]">
+            <h2 className="text-3xl md:text-4xl font-display font-semibold text-[var(--ink)]">
               Analysis for compliance and engineering leaders.
             </h2>
           </div>

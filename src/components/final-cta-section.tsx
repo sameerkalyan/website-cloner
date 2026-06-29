@@ -10,7 +10,7 @@ export function FinalCTASection() {
             <p className="text-sm font-mono text-[var(--accent)] mb-6">
               Ready to begin?
             </p>
-            <h2 className="text-4xl md:text-5xl font-heading leading-heading text-[var(--pa)] mb-6">
+            <h2 className="text-4xl md:text-5xl font-display text-[var(--pa)] mb-6">
               Your AI.{" "}
               <span className="italic text-[var(--accent)]">
                 Properly governed.
@@ -36,7 +36,7 @@ export function FinalCTASection() {
             </div>
           </div>
           <div className="hidden md:flex items-center justify-center">
-            <span className="text-[20rem] lg:text-[28rem] font-heading font-bold text-[var(--pa)]/5 leading-none select-none pointer-events-none">
+            <span className="text-[20rem] lg:text-[28rem] font-display font-bold text-[var(--pa)]/5 leading-none select-none pointer-events-none">
               governed
             </span>
           </div>

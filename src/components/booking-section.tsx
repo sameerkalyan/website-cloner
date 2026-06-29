@@ -10,7 +10,7 @@ export function BookingSection() {
           <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
             Talk to us
           </p>
-          <h2 className="text-3xl md:text-4xl font-heading font-semibold leading-heading text-[var(--ink)]">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold text-[var(--ink)]">
             A direct conversation. No process required.
           </h2>
         </header>
