@@ -28,7 +28,7 @@ export function ServicesTabs() {
                 onClick={() => setActive(s)}
                 className={`px-4 py-2.5 text-sm font-medium rounded-full border text-left transition-all ${
                   active.id === s.id
-                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--pa)]"
+                    ? "border-[var(--accent)] bg-[var(--accent)] text-white"
                     : "border-[var(--line)] text-[var(--ink2)] hover:border-[var(--ink)] hover:text-[var(--ink)]"
                 }`}
               >

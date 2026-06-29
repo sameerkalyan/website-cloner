@@ -32,8 +32,8 @@ AI Governance &amp; Infrastructure Consultancy · London
 </div>
 
 <h1
-className="text-5xl md:text-6xl lg:text-[5rem] font-display font-extrabold leading-[0.92] tracking-tight text-[var(--ink)] mb-8 opacity-0"
-style={{ animation: "fadeUp 0.55s ease-out 0.1s forwards" }}
+className="text-4xl md:text-5xl lg:text-[4.5rem] font-display font-extrabold leading-[1.05] tracking-tight text-[var(--ink)] mb-8 opacity-0"
+style={{ animation: "fadeUp 0.55s ease-out 0.1s forwards", textWrap: "balance" }}
 >
 <span className="block text-[var(--ink2)]">Most enterprise AI is</span>
 <span className="block text-[var(--ink)] mt-1">ungoverned.</span>

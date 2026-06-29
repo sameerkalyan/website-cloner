@@ -45,7 +45,7 @@ export function InsightsSection() {
                 onClick={() => setFilter(f)}
                 className={`px-3.5 py-1.5 text-sm font-medium rounded-full transition-all ${
                   filter === f
-                    ? "bg-[var(--ink)] text-[var(--pa)]"
+                    ? "bg-[var(--accent)] text-white"
                     : "bg-transparent text-[var(--ink2)] border border-[var(--line)] hover:border-[var(--ink)]"
                 }`}
               >
