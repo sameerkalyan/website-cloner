@@ -6,7 +6,8 @@ import type { Service } from "@/types";
 import { Icon } from "@/components/icons";
 
 export function ServicesTabs() {
-  const [active, setActive] = useState<Service>(SERVICES[0]);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const active = SERVICES[activeIndex];
 
   return (
     <section id="services" className="py-24 bg-[var(--pa)]">
@@ -22,13 +23,13 @@ export function ServicesTabs() {
 
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex lg:flex-col flex-wrap gap-2 shrink-0">
-            {SERVICES.map((s) => (
+            {SERVICES.map((s, idx) => (
               <button
                 type="button"
                 key={s.id}
-                onClick={() => setActive(s)}
+                onClick={() => setActiveIndex(idx)}
                 className={`px-4 py-2.5 text-sm font-medium rounded-full border text-left transition-all cursor-pointer ${
-                  active.id === s.id
+                  activeIndex === idx
                     ? "border-[var(--accent)] bg-[var(--accent)] text-white"
                     : "border-[var(--line)] text-[var(--ink2)] hover:border-[var(--ink)] hover:text-[var(--ink)]"
                 }`}

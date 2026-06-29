@@ -57,11 +57,12 @@ export const SERVICES = [
       "EU AI Act readiness & compliance",
       "NIST AI RMF mapping",
       "ISO 42001 certification support",
-      "DORA Alignment for financial services",
+      "DORA alignment for financial services",
       "GDPR + AI data-processing obligations",
     ],
     sideItems: ["Regulation", "Framework", "Standard"],
     frameworks: ["EU AI Act", "NIST AI RMF", "ISO 42001", "DORA"],
+    stackRows: ["EU AI Act", "NIST AI RMF", "ISO 42001", "DORA", "GDPR"],
   },
   {
     id: 2,
@@ -79,6 +80,7 @@ export const SERVICES = [
     ],
     sideItems: ["Infrastructure", "Cloud", "Platform"],
     frameworks: ["AWS", "Azure", "GCP", "Terraform"],
+    stackRows: ["AWS", "Azure", "GCP", "Terraform", "Kubernetes"],
   },
 ];
 
