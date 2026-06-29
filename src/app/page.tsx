@@ -11,6 +11,7 @@ import { InsightsSection } from "@/components/insights-section";
 import { IndustriesSection } from "@/components/industries-section";
 import { FreeResourcesSection } from "@/components/free-resources-section";
 import { BookingSection } from "@/components/booking-section";
+import { TrustSecurity } from "@/components/trust-security";
 import { FinalCTASection } from "@/components/final-cta-section";
 import { Footer } from "@/components/footer";
 
@@ -30,8 +31,9 @@ export default function Home() {
         <InsightsSection />
         <IndustriesSection />
         <FreeResourcesSection />
-        <BookingSection />
-        <FinalCTASection />
+<BookingSection />
+<TrustSecurity />
+<FinalCTASection />
       </main>
       <Footer />
     </>
