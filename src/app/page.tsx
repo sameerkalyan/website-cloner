@@ -5,6 +5,7 @@ import { ProofBlock } from "@/components/proof-block";
 import { TheClaimStats } from "@/components/the-claim-stats";
 import { TwoPillarDisciplines } from "@/components/two-pillar-disciplines";
 import { ServicesTabs } from "@/components/services-tabs";
+import { HowWeWork } from "@/components/how-we-work";
 import { FrameworksSection } from "@/components/frameworks-section";
 import { InsightsSection } from "@/components/insights-section";
 import { IndustriesSection } from "@/components/industries-section";
@@ -23,8 +24,9 @@ export default function Home() {
         <ProofBlock />
         <TheClaimStats />
         <TwoPillarDisciplines />
-        <ServicesTabs />
-        <FrameworksSection />
+<ServicesTabs />
+<HowWeWork />
+<FrameworksSection />
         <InsightsSection />
         <IndustriesSection />
         <FreeResourcesSection />

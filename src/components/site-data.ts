@@ -255,6 +255,39 @@ export const PROOF_ITEMS = [
 
 export const STAT_73PCT_NOTE = "OECD.AI (2024). Based on a survey of 4,500 organisations across 20 countries.";
 
+export const ENGAGEMENT_PHASES = [
+  {
+    phase: "01",
+    title: "Discovery + inventory",
+    duration: "Week 1–2",
+    deliverables: [
+      "AI system inventory and risk classification",
+      "Regulatory obligation map (EU AI Act, NIST, ISO 42001)",
+      "Stakeholder alignment workshop",
+    ],
+  },
+  {
+    phase: "02",
+    title: "Governance architecture + controls",
+    duration: "Week 3–4",
+    deliverables: [
+      "Governance framework tailored to your operating model",
+      "Model register and risk assessment templates",
+      "Cloud landing zone patterns for regulated AI workloads",
+    ],
+  },
+  {
+    phase: "03",
+    title: "Evidence pack + audit trail",
+    duration: "Week 5–6",
+    deliverables: [
+      "Policy pack, runbooks, and decision logs",
+      "Audit trail and evidence repository",
+      "Handover to your teams with implementation support",
+    ],
+  },
+] as const;
+
 export const READINESS_DATA = [
   { label: "Policy & Framework", pct: 72 },
   { label: "AI Risk Management", pct: 58 },
