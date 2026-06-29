@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import { READINESS_DATA } from "@/components/site-data";
-import { Icon } from "@/components/icons";
 
 export function ReadinessPanel() {
   const panelRef = useRef<HTMLDivElement>(null);

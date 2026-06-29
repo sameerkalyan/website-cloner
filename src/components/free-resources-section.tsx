@@ -10,7 +10,7 @@ export function FreeResourcesSection() {
           <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
             Start here
           </p>
-          <h2 className="text-3xl md:text-4xl font-heading font-semibold leading-heading text-[var(--ink)]">
+          <h2 className="text-3xl md:text-4xl font-display font-semibold text-[var(--ink)]">
             Start here, at no cost.
           </h2>
         </header>
@@ -22,7 +22,7 @@ export function FreeResourcesSection() {
             >
               <div className="mb-5">
                 <span className="inline-flex items-center justify-center h-10 w-10 rounded-xl bg-[var(--accent)]/10 text-[var(--accent)]">
-                  <Icon name={magnet.icon as any} />
+                  <Icon name={magnet.icon} />
                 </span>
               </div>
               <p className="text-[10px] font-mono uppercase tracking-widest text-[var(--ink3)] mb-2">

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { SERVICES } from "@/components/site-data";
 import type { Service } from "@/types";
-import Link from "next/link";
 import { Icon } from "@/components/icons";
 
 export function ServicesTabs() {
@@ -16,7 +15,7 @@ export function ServicesTabs() {
           <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
             Full service detail
           </p>
-          <p className="text-2xl md:text-3xl font-heading font-semibold leading-heading text-[var(--ink)]">
+          <p className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)]">
             Everything we do, in depth.
           </p>
         </header>
@@ -44,7 +43,7 @@ export function ServicesTabs() {
                 <span className="inline-block px-2.5 py-1 text-xs font-mono font-medium bg-[var(--accent)]/10 text-[var(--accent)] rounded-full mb-4">
                   {active.tag}
                 </span>
-                <h3 className="text-2xl md:text-3xl font-heading font-semibold leading-heading text-[var(--ink)] mb-4">
+                <h3 className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)] mb-4">
                   {active.title}
                 </h3>
                 <p className="text-base md:text-lg text-[var(--ink2)] leading-relaxed mb-6">
