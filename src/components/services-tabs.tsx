@@ -24,9 +24,10 @@ export function ServicesTabs() {
           <div className="flex lg:flex-col flex-wrap gap-2 shrink-0">
             {SERVICES.map((s) => (
               <button
+                type="button"
                 key={s.id}
                 onClick={() => setActive(s)}
-                className={`px-4 py-2.5 text-sm font-medium rounded-full border text-left transition-all ${
+                className={`px-4 py-2.5 text-sm font-medium rounded-full border text-left transition-all cursor-pointer ${
                   active.id === s.id
                     ? "border-[var(--accent)] bg-[var(--accent)] text-white"
                     : "border-[var(--line)] text-[var(--ink2)] hover:border-[var(--ink)] hover:text-[var(--ink)]"
