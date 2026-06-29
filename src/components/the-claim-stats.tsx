@@ -5,18 +5,19 @@ import { Icon } from "@/components/icons";
 
 export function TheClaimStats() {
   return (
-    <section className="py-24 md:py-32 bg-[var(--card)] border-y border-[var(--line)]">
+    <section className="py-24 md:py-32 border-y border-[var(--line)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
           <div>
-            <span className="text-8xl md:text-9xl font-display font-bold text-[var(--ink)] leading-none">
-              73%
+            <span className="text-[7rem] md:text-[9rem] font-display font-bold text-[var(--ink)] leading-[0.85] metric-value">
+              73
+              <span className="text-[var(--accent)]">%</span>
             </span>
-          </div>
-          <div className="pt-2">
-            <h2 className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)] mb-6">
+            <h2 className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)] mt-6 leading-snug">
               of organisations have deployed AI without a governance framework.
             </h2>
+          </div>
+          <div className="pt-4 md:pt-8">
             <p className="text-base text-[var(--ink2)] leading-relaxed mb-8">
               The governance gap is especially acute in regulated industries —
               financial services, healthcare, and critical infrastructure — where
