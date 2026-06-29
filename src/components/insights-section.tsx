@@ -36,14 +36,14 @@ export function InsightsSection() {
               Analysis for compliance and engineering leaders.
             </h2>
           </div>
-          <div className="flex flex-wrap gap-2" role="tablist">
+          <div className="flex flex-nowrap gap-2 overflow-x-auto" role="tablist">
             {filters.map((f) => (
               <button
                 key={f}
                 role="tab"
                 aria-selected={filter === f}
                 onClick={() => setFilter(f)}
-                className={`px-3.5 py-1.5 text-sm font-medium rounded-full transition-all ${
+                className={`px-3 py-1.5 text-xs font-medium rounded-full transition-all whitespace-nowrap ${
                   filter === f
                     ? "bg-[var(--accent)] text-white"
                     : "bg-transparent text-[var(--ink2)] border border-[var(--line)] hover:border-[var(--ink)]"
