@@ -36,7 +36,7 @@ export function InsightsSection() {
               Analysis for compliance and engineering leaders.
             </h2>
           </div>
-          <div className="flex flex-nowrap gap-2" role="tablist">
+          <div className="flex flex-nowrap gap-2 overflow-x-auto scrollbar-hide" role="tablist">
             {filters.map((f) => (
               <button
                 key={f}

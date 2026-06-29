@@ -225,3 +225,11 @@
   font-feature-settings: "tnum";
   letter-spacing: -0.04em;
 }
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
