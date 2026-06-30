@@ -56,7 +56,7 @@ export function Footer() {
             </div>
           ))}
         </div>
-        <div className="mt-16 pt-8 border-t border-[var(--pa)]/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-[var(--pa)]/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[var(--pa)]/50">
             © 2026 SMIIT CyberAI
           </p>

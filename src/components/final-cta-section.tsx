@@ -3,14 +3,14 @@ import { Icon } from "@/components/icons";
 
 export function FinalCTASection() {
   return (
-    <section className="py-24 md:py-32 bg-[var(--ink)] text-[var(--pa)] overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="py-24 md:py-32 bg-[var(--ink)] text-[var(--pa)] overflow-hidden relative">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
             <p className="text-sm font-mono text-[var(--accent)] mb-6">
               Ready to begin?
             </p>
-            <h2 className="text-4xl md:text-5xl font-display text-[var(--pa)] mb-6">
+            <h2 className="text-4xl md:text-5xl font-sans text-[var(--pa)] mb-6">
               Your AI.{" "}
               <span className="italic text-[var(--accent)]">
                 Properly governed.
@@ -36,7 +36,7 @@ export function FinalCTASection() {
             </div>
           </div>
           <div className="hidden md:flex items-center justify-center">
-            <span className="text-[20rem] lg:text-[28rem] font-display font-bold text-[var(--pa)]/5 leading-none select-none pointer-events-none">
+            <span className="text-[20rem] lg:text-[28rem] font-sans font-bold text-[var(--pa)]/5 leading-none select-none pointer-events-none">
               governed
             </span>
           </div>

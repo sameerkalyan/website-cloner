@@ -3,7 +3,7 @@ import { Icon } from "@/components/icons";
 
 export function HeroSection() {
   return (
-    <section className="relative pt-8 pb-20 md:pt-12 md:pb-28 bg-[var(--pa)] gradient-bg">
+    <section className="relative pt-8 pb-20 md:pt-12 md:pb-28 bg-[var(--pa)]">
       <div className="absolute inset-0 dot-grid opacity-40" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
@@ -17,11 +17,11 @@ export function HeroSection() {
           </div>
 
           <h1
-            className="text-4xl md:text-5xl lg:text-[4.5rem] font-display font-extrabold leading-[1.05] tracking-tight text-[var(--ink)] mb-8 opacity-0"
+            className="text-4xl md:text-5xl lg:text-[4.5rem] font-sans font-extrabold leading-[1.05] tracking-tight text-[var(--ink)] mb-8 opacity-0"
             style={{ animation: "fadeUp 0.55s ease-out 0.1s forwards", textWrap: "balance" }}
           >
-            <span className="block text-[var(--ink2)]">EU AI Act enforcement</span>
-            <span className="block text-[var(--ink)] mt-1">has begun.</span>
+            <span className="block">EU AI Act enforcement</span>
+            <span className="block mt-2 font-serif italic font-normal text-[var(--accent)]">has begun.</span>
           </h1>
 
           <p

@@ -8,7 +8,7 @@ export function IndustriesSection() {
           <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
             Industries
           </p>
-          <h2 className="text-3xl md:text-4xl font-display font-semibold text-[var(--ink)]">
+          <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[var(--ink)]">
             Where governance and infrastructure carry the most weight.
           </h2>
         </header>
@@ -16,7 +16,7 @@ export function IndustriesSection() {
           {INDUSTRIES.map((ind) => (
             <div
               key={ind.id}
-              className="flex flex-col rounded-2xl border border-[var(--line)] bg-[var(--card)] p-8"
+              className="hover-lift card-glow flex flex-col rounded-2xl border border-[var(--line)] bg-[var(--card)] p-8"
             >
               <h3 className="text-lg font-semibold text-[var(--ink)] mb-3">
                 {ind.name}

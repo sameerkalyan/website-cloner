@@ -11,7 +11,7 @@ return (
   <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
     Standards
   </p>
-  <h2 className="text-3xl md:text-4xl font-display font-semibold text-[var(--ink)]">
+  <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[var(--ink)]">
     Every engagement anchored to recognised standards.
   </h2>
 </header>

@@ -2,19 +2,22 @@
 
 import Link from "next/link";
 import { Icon } from "@/components/icons";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { STAT_73PCT_NOTE } from "@/components/site-data";
 
 export function TheClaimStats() {
+  const { ref, isVisible } = useScrollReveal();
+
   return (
     <section className="py-24 md:py-32 border-y border-[var(--line)]">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div ref={ref} className={`mx-auto max-w-7xl px-6 lg:px-8 ${isVisible ? "reveal visible" : ""}`}>
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
           <div>
-            <span className="text-[7rem] md:text-[9rem] font-display font-bold text-[var(--ink)] leading-[0.85] metric-value">
+            <span className="text-[7rem] md:text-[9rem] font-sans font-bold text-[var(--ink)] leading-[0.85] metric-value">
               73
               <span className="text-[var(--accent)]">%</span>
             </span>
-            <h2 className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)] mt-6 leading-snug">
+            <h2 className="text-2xl md:text-3xl font-sans font-semibold text-[var(--ink)] mt-6 leading-snug">
               of organisations have deployed AI without a governance framework.
             </h2>
             <p className="text-[11px] text-[var(--ink3)] mt-3 leading-relaxed">{STAT_73PCT_NOTE}</p>
@@ -26,7 +29,7 @@ export function TheClaimStats() {
               the consequences of ungoverned AI compound over time.
             </p>
             <blockquote className="border-l-2 border-[var(--accent)] pl-6 py-1">
-              <p className="text-lg font-display italic text-[var(--ink2)] leading-relaxed">
+              <p className="text-lg font-sans italic text-[var(--ink2)] leading-relaxed">
                 The organisations that govern AI well will not just avoid
                 regulatory risk — they will move faster, with greater confidence,
                 than those who do not.

@@ -10,8 +10,8 @@ export function BookingSection() {
           <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
             Talk to us
           </p>
-          <h2 className="text-3xl md:text-4xl font-display font-semibold text-[var(--ink)]">
-            A direct conversation. No process required.
+          <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[var(--ink)]">
+            A direct conversation<br />No process required
           </h2>
         </header>
         <p className="text-base text-[var(--ink2)] leading-relaxed max-w-2xl mb-16">
@@ -26,7 +26,7 @@ export function BookingSection() {
               href={type.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col rounded-2xl border border-[var(--line)] bg-[var(--card)] p-8 hover:border-[var(--ink)] transition-colors"
+              className="group flex flex-col hover-lift card-glow rounded-2xl border border-[var(--line)] bg-[var(--card)] p-8 transition-colors"
             >
               <Icon
                 name="calendar"

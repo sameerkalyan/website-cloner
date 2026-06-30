@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { BLOG_ARTICLES } from "@/components/site-data";
 import type { BlogArticle } from "@/types";
 
@@ -8,6 +9,7 @@ type Filter = "All topics" | "AI Governance" | "Infrastructure" | "AI Agents" | 
 
 export function InsightsSection() {
   const [filter, setFilter] = useState<Filter>("All topics");
+  const { ref, isVisible } = useScrollReveal();
 
   const filters: Filter[] = [
     "All topics",
@@ -30,7 +32,7 @@ export function InsightsSection() {
             <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
               Intelligence Hub
             </p>
-            <h2 className="text-3xl md:text-4xl font-display font-semibold text-[var(--ink)]">
+            <h2 className="text-3xl md:text-4xl font-sans font-semibold text-[var(--ink)]">
               Analysis for compliance and engineering leaders.
             </h2>
           </div>
@@ -53,11 +55,11 @@ export function InsightsSection() {
           </div>
         </header>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div ref={ref} className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 ${isVisible ? "reveal-stagger visible" : ""}`}>
           {filtered.map((article: BlogArticle) => (
             <article
               key={article.id}
-              className="group flex flex-col rounded-xl border border-[var(--line)] bg-[var(--card)] p-6 hover:border-[var(--ink)] transition-colors"
+              className="group flex hover-lift card-glow flex-col rounded-xl border border-[var(--line)] bg-[var(--card)] p-6 transition-colors"
             >
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-3">
@@ -85,20 +87,22 @@ export function InsightsSection() {
           ))}
         </div>
 
-        <div className="mt-12 grid md:grid-cols-2 gap-6">
-          <article className="rounded-xl border border-[var(--line)] bg-[var(--card)] p-8 md:p-10">
-            <p className="text-xs font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
+        <div className="mt-16 pt-8 border-t border-[var(--line)]">
+          <div className="flex flex-col md:flex-row md:items-center gap-6">
+            <div className="max-w-md">
+              <p className="text-xs font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
               Newsletter
             </p>
             <h3 className="text-xl font-semibold text-[var(--ink)] mb-2">
               The SMIIT Intelligence Brief
             </h3>
-            <p className="text-sm text-[var(--ink2)] mb-6">
+            <p className="text-sm text-[var(--ink2)]">
               Fortnightly analysis for technology and compliance leaders. No
               noise, just signal.
             </p>
+            </div>
             <form
-              className="flex flex-col sm:flex-row gap-2"
+              className="flex flex-col sm:flex-row gap-2 w-full md:w-auto"
               onSubmit={(e) => e.preventDefault()}
             >
               <input
@@ -113,7 +117,7 @@ export function InsightsSection() {
                 Subscribe
               </button>
             </form>
-          </article>
+          </div>
         </div>
       </div>
     </section>

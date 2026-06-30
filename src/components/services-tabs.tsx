@@ -3,20 +3,22 @@
 import { useState } from "react";
 import { SERVICES } from "@/components/site-data";
 import type { Service } from "@/types";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Icon } from "@/components/icons";
 
 export function ServicesTabs() {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = SERVICES[activeIndex];
+  const { ref, isVisible } = useScrollReveal();
 
   return (
     <section id="services" className="py-24 bg-[var(--pa)]">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div ref={ref} className={`mx-auto max-w-7xl px-6 lg:px-8 ${isVisible ? "reveal visible" : ""}`}>
         <header className="max-w-2xl mb-12">
           <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
             Our practice
           </p>
-          <p className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)]">
+          <p className="text-2xl md:text-3xl font-sans font-semibold text-[var(--ink)]">
             Two pillars. One practice. Zero compromise.
           </p>
         </header>
@@ -42,13 +44,13 @@ export function ServicesTabs() {
             </p>
           </div>
 
-          <div className="flex-1 border border-[var(--line)] rounded-xl p-8 md:p-10 bg-[var(--card)]">
+          <div className="flex-1 card-glow border border-[var(--line)] rounded-xl p-8 md:p-10 bg-[var(--card)]">
             <div className="flex flex-col xl:flex-row gap-8">
               <div className="flex-1">
                 <span className="inline-block px-2.5 py-1 text-xs font-mono font-medium bg-[var(--accent)]/10 text-[var(--accent)] rounded-full mb-4">
                   {active.tag}
                 </span>
-                <h3 className="text-2xl md:text-3xl font-display font-semibold text-[var(--ink)] mb-4">
+                <h3 className="text-2xl md:text-3xl font-sans font-semibold text-[var(--ink)] mb-4">
                   {active.title}
                 </h3>
                 <p className="text-base md:text-lg text-[var(--ink2)] leading-relaxed mb-6">

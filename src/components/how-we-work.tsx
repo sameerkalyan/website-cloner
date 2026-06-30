@@ -8,22 +8,22 @@ export function HowWeWork() {
           <p className="text-sm font-mono text-[var(--ink3)] uppercase tracking-widest mb-3">
             Operating model
           </p>
-          <p className="text-3xl md:text-4xl font-display font-semibold text-[var(--ink)]">
+          <p className="text-3xl md:text-4xl font-sans font-semibold text-[var(--ink)]">
             How engagements run.
           </p>
         </header>
 
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {ENGAGEMENT_PHASES.map((phase) => (
-            <div key={phase.phase} className="relative">
+            <div key={phase.phase} className="relative timeline-phase">
               <div className="flex items-center gap-4 mb-6">
-                <span className="text-3xl font-display font-bold text-[var(--accent)] metric-value">
+                <span className="text-3xl font-sans font-bold text-[var(--accent)] metric-value">
                   {phase.phase}
                 </span>
                 <div className="h-px flex-1 bg-[var(--line)]" />
               </div>
 
-              <h3 className="text-xl font-display font-semibold text-[var(--ink)] mb-1">
+              <h3 className="text-xl font-sans font-semibold text-[var(--ink)] mb-1">
                 {phase.title}
               </h3>
               <p className="text-xs font-mono text-[var(--ink3)] uppercase tracking-widest mb-6">

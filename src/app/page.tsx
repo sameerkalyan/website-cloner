@@ -13,6 +13,8 @@ import { BookingSection } from "@/components/booking-section";
 import { TrustSecurity } from "@/components/trust-security";
 import { FinalCTASection } from "@/components/final-cta-section";
 import { Footer } from "@/components/footer";
+import { BackToTop } from "@/components/back-to-top";
+import { ReadingProgress } from "@/components/reading-progress";
 
 export default function Home() {
   return (
@@ -34,6 +36,8 @@ export default function Home() {
         <FinalCTASection />
       </main>
       <Footer />
+      <BackToTop />
+      <ReadingProgress />
     </>
   );
 }

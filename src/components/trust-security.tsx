@@ -21,7 +21,7 @@ export function TrustSecurity() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {TRUST_SIGNALS.map((signal) => (
-            <div key={signal.title} className="flex gap-4">
+            <div key={signal.title} className="hover-lift card-glow flex gap-4">
               <div className="shrink-0 mt-1">
                 <div className="h-10 w-10 rounded-full bg-[var(--pa)] border border-[var(--line)] flex items-center justify-center">
                   <Icon name="check" className="h-5 w-5 text-[var(--accent)]" />
