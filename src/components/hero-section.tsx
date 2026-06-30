@@ -1,20 +1,7 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Icon } from "@/components/icons";
-import { DISCIPLINES } from "@/components/site-data";
 
 export function HeroSection() {
-  const [, setActiveDiscipline] = useState(0);
-
-  useEffect(() => {
-    const id = window.setInterval(() => {
-      setActiveDiscipline((prev) => (prev + 1) % DISCIPLINES.length);
-    }, 3500);
-    return () => window.clearInterval(id);
-  }, []);
-
   return (
     <section className="relative pt-8 pb-20 md:pt-12 md:pb-28 bg-[var(--pa)] gradient-bg">
       <div className="absolute inset-0 dot-grid opacity-40" />
@@ -54,7 +41,7 @@ export function HeroSection() {
           </p>
 
           <div
-            className="flex flex-wrap items-center gap-3 mb-20 opacity-0"
+            className="flex flex-wrap items-center gap-3 opacity-0"
             style={{ animation: "fadeUp 0.55s ease-out 0.2s forwards" }}
           >
             <Link
@@ -70,27 +57,6 @@ export function HeroSection() {
               Explore our services <Icon name="arrowRight" />
             </Link>
           </div>
-        </div>
-
-        <div className="mt-0">
-          <p className="text-xs font-mono text-[var(--ink3)] uppercase tracking-widest mb-4">
-            Disciplines
-          </p>
-          <nav className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-3">
-            {DISCIPLINES.map((discipline, idx) => (
-              <Link
-                key={discipline}
-                href="#services"
-                className="text-sm text-[var(--ink2)] hover:text-[var(--ink)] transition-colors"
-                onMouseEnter={() => setActiveDiscipline(idx)}
-              >
-                <span className="font-mono text-[var(--ink3)] mr-1.5">
-                  0{idx + 1}
-                </span>
-                {discipline}
-              </Link>
-            ))}
-          </nav>
         </div>
       </div>
     </section>

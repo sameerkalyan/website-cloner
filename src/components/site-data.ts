@@ -36,15 +36,6 @@ export const BOOKING_TYPES = [
   },
 ] as const;
 
-export const DISCIPLINES = [
-  "Governance",
-  "Infrastructure",
-  "AI Agents",
-  "Cybersecurity",
-  "Red Teaming",
-  "Zero Trust",
-];
-
 export const SERVICES = [
   {
     id: 1,
@@ -241,15 +232,6 @@ export const LEAD_MAGNETS = [
     cta: "Download →",
     icon: "download",
   },
-  {
-    id: 3,
-    title: "Newsletter",
-    subtitle: "The SMIIT Intelligence Brief",
-    description:
-      "Fortnightly analysis for technology and compliance leaders. No noise, just signal. Cancel anytime.",
-    cta: "Subscribe →",
-    icon: "mail",
-  },
 ];
 
 export const PROOF_ITEMS = [
@@ -319,10 +301,6 @@ export const FOOTER_LINKS = {
   ],
   intelligence: [
     { label: "All articles", href: "#insights" },
-    { label: "AI Governance", href: "#insights" },
-    { label: "Infrastructure", href: "#insights" },
-    { label: "AI Agents", href: "#insights" },
-    { label: "Transformation", href: "#insights" },
   ],
   frameworks: [
     { label: "EU AI Act", href: "#frameworks" },
@@ -332,9 +310,6 @@ export const FOOTER_LINKS = {
     { label: "DORA", href: "#frameworks" },
   ],
   company: [
-    { label: "About", href: "#" },
     { label: "Contact", href: "#booking" },
-    { label: "Careers", href: "#" },
-    { label: "Privacy", href: "#" },
   ],
 };

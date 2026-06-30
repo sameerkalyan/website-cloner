@@ -14,7 +14,7 @@ export function FreeResourcesSection() {
             Start here, at no cost.
           </h2>
         </header>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {LEAD_MAGNETS.map((magnet) => (
             <div
               key={magnet.id}

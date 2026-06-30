@@ -23,20 +23,6 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-5">
               <Link
-                href="https://linkedin.com"
-                className="text-[var(--pa)]/60 hover:text-[var(--accent)] transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Icon name="linkedin" />
-              </Link>
-              <Link
-                href="https://x.com"
-                className="text-[var(--pa)]/60 hover:text-[var(--accent)] transition-colors"
-                aria-label="X (Twitter)"
-              >
-                <Icon name="xTwitter" />
-              </Link>
-              <Link
                 href="mailto:hello@smiitcyberai.com"
                 className="text-[var(--pa)]/60 hover:text-[var(--accent)] transition-colors"
                 aria-label="Email"
@@ -74,26 +60,6 @@ export function Footer() {
           <p className="text-xs text-[var(--pa)]/50">
             © 2026 SMIIT CyberAI
           </p>
-          <nav className="flex flex-wrap items-center gap-6">
-            <Link
-              href="#"
-              className="text-xs text-[var(--pa)]/50 hover:text-[var(--pa)] transition-colors"
-            >
-              Privacy
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-[var(--pa)]/50 hover:text-[var(--pa)] transition-colors"
-            >
-              Terms
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-[var(--pa)]/50 hover:text-[var(--pa)] transition-colors"
-            >
-              Cookies
-            </Link>
-          </nav>
         </div>
       </div>
     </footer>

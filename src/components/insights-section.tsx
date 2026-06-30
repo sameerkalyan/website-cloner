@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { Icon } from "@/components/icons";
 import { BLOG_ARTICLES } from "@/components/site-data";
 import type { BlogArticle } from "@/types";
 
@@ -82,15 +80,6 @@ export function InsightsSection() {
                 <p className="text-sm text-[var(--ink2)] leading-relaxed">
                   {article.excerpt}
                 </p>
-              </div>
-              <div className="mt-5 pt-4 border-t border-[var(--line)]">
-                <Link
-                  href="#"
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--ink)] hover:text-[var(--accent)] transition-colors"
-                >
-                  Read article
-                  <Icon name="arrowRight" />
-                </Link>
               </div>
             </article>
           ))}

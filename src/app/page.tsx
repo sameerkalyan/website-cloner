@@ -3,7 +3,6 @@ import { AnnouncementBanner } from "@/components/announcement-banner";
 import { HeroSection } from "@/components/hero-section";
 import { ProofBlock } from "@/components/proof-block";
 import { TheClaimStats } from "@/components/the-claim-stats";
-import { TwoPillarDisciplines } from "@/components/two-pillar-disciplines";
 import { ServicesTabs } from "@/components/services-tabs";
 import { HowWeWork } from "@/components/how-we-work";
 import { FrameworksSection } from "@/components/frameworks-section";
@@ -24,16 +23,15 @@ export default function Home() {
         <HeroSection />
         <ProofBlock />
         <TheClaimStats />
-        <TwoPillarDisciplines />
-<ServicesTabs />
-<HowWeWork />
-<FrameworksSection />
+        <ServicesTabs />
+        <HowWeWork />
+        <FrameworksSection />
         <InsightsSection />
         <IndustriesSection />
         <FreeResourcesSection />
-<BookingSection />
-<TrustSecurity />
-<FinalCTASection />
+        <BookingSection />
+        <TrustSecurity />
+        <FinalCTASection />
       </main>
       <Footer />
     </>
